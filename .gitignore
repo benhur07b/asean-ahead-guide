@@ -1,0 +1,36 @@
+# Patterns are unanchored so they apply at any depth — this file works
+# whether the repo root is this folder or a parent one.
+
+# --- AI assistant artifacts ---
+.claude/
+CLAUDE.local.md
+.cursor/
+.cursorrules
+.windsurfrules
+.aider*
+.continue/
+.codeium/
+.specstory/
+.github/copilot-instructions.md
+
+# --- generated output ---
+# combined.html is stitched from the pages; the PDF is rendered from it
+pdf-build/combined.html
+*.pdf
+
+# --- local environment & secrets ---
+.env
+.env.*
+!.env.example
+*.local
+
+# --- editor & OS cruft ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
