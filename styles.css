@@ -378,6 +378,15 @@ a.card:hover {
 .chip-facilitators { background: var(--blue); }
 .chip-participants { background: var(--pink); color: var(--blue-deep); }
 .chip-partners { background: var(--red); }
+.chip-helpdesk { background: var(--sky); color: var(--blue-deep); }
+
+.tag-tbd {
+  background: transparent;
+  border: 1.5px dashed var(--ink-soft);
+  color: var(--ink-soft) !important;
+  margin-left: 0.3rem;
+  margin-right: 0 !important;
+}
 .chip-neutral { background: var(--ink-soft); }
 
 .card h3 { font-size: 1.3rem; color: var(--blue-deep); }
@@ -667,6 +676,26 @@ details.faq-item .faq-body li::marker { color: var(--red); }
 details.faq-item .faq-body li:last-child { margin-bottom: 0; }
 
 details.faq-item .faq-body strong { color: var(--blue-deep); }
+
+/* ---------- FAQ help desk ---------- */
+
+.faq-group-heading {
+  margin: 2.4rem 0 1.1rem;
+  padding-top: 1.6rem;
+  border-top: 1.5px solid var(--blue-pale);
+}
+
+.faq-group-heading .section-title { margin-bottom: 0.4rem; }
+
+.faq-group-heading .prose { max-width: 62ch; }
+
+details.faq-item.helpdesk {
+  border-color: var(--sky);
+  border-left: 5px solid var(--sky);
+  background: rgba(152, 197, 254, 0.10);
+}
+
+details.faq-item.helpdesk[open] { background: var(--white); }
 
 details.faq-item .tag {
   font-size: 0.65rem;
