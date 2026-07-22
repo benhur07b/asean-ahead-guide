@@ -645,7 +645,28 @@ details.faq-item summary::after {
 
 details.faq-item[open] summary::after { content: "–"; }
 
-details.faq-item .faq-body { padding: 0 1.1rem 1rem; color: var(--ink-soft); max-width: 70ch; }
+details.faq-item .faq-body {
+  padding: 0.1rem 1.1rem 1.1rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+details.faq-item .faq-body ul,
+details.faq-item .faq-body ol {
+  margin: 0.6rem 0 0.2rem;
+  padding-left: 1.2rem;
+}
+
+details.faq-item .faq-body li {
+  margin-bottom: 0.55rem;
+  padding-left: 0.2rem;
+}
+
+details.faq-item .faq-body li::marker { color: var(--red); }
+
+details.faq-item .faq-body li:last-child { margin-bottom: 0; }
+
+details.faq-item .faq-body strong { color: var(--blue-deep); }
 
 details.faq-item .tag {
   font-size: 0.65rem;
